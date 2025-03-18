@@ -55,5 +55,10 @@ namespace Fuggohidak
         {
             Darab.Content = hidak.Where(h => h.Ev >= 2000).Count().ToString() + " darab";
         }
+
+        private void Kereses_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+        }
     }
 }

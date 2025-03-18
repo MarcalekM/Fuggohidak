@@ -7,22 +7,21 @@
         mc:Ignorable="d"
         Title="Függőhidak" Height="450" Width="800">
     <Grid>
-        <Menu Margin="0,0,670,412">
-            
+        <Menu Margin="41,27,589,365" MaxWidth="150" MinWidth="150" MinHeight="25" MaxHeight="25">
+            <MenuItem x:Name="Kereses" Header="Keresés" Click="Kereses_Click"/>
+            <MenuItem x:Name="Kilepes" Header="Kilépés" Click="Exit_Click"/>
         </Menu>
-        <Button x:Name="Keres" Content="Kereses" HorizontalAlignment="Left" Margin="60,22,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="147,22,0,0" VerticalAlignment="Top" Click="Exit_Click"/>
-        <ListBox x:Name="HidNevek"  Margin="60,47,500,170" SelectionChanged="HidNevek_SelectionChanged"/>
-        <Label Content="Hely" HorizontalAlignment="Center" Margin="0,61,0,0" VerticalAlignment="Top"/>
-        <Label Content="Ország" HorizontalAlignment="Left" Margin="370,116,0,0" VerticalAlignment="Top"/>
-        <Label Content="Hossz" HorizontalAlignment="Left" Margin="376,191,0,0" VerticalAlignment="Top"/>
-        <Label Content="Év" HorizontalAlignment="Left" Margin="395,238,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="KijeloltHely" HorizontalAlignment="Left" Margin="522,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="KijeloltOrszag" HorizontalAlignment="Left" Margin="522,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="KijeloltHossz" HorizontalAlignment="Left" Margin="522,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="KijeloltEv" HorizontalAlignment="Left" Margin="522,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Exit" Content="Kilépés" HorizontalAlignment="Left" Margin="582,338,0,0" VerticalAlignment="Top" Click="Exit_Click"/>
-        <StackPanel Margin="60,296,475,34">
+        <ListBox x:Name="HidNevek"  Margin="81,93,479,124" SelectionChanged="HidNevek_SelectionChanged"/>
+        <Label Content="Hely" HorizontalAlignment="Left" Margin="404,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ország" HorizontalAlignment="Left" Margin="391,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hossz" HorizontalAlignment="Left" Margin="397,223,0,0" VerticalAlignment="Top"/>
+        <Label Content="Év" HorizontalAlignment="Left" Margin="416,270,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="KijeloltHely" HorizontalAlignment="Left" Margin="543,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="KijeloltOrszag" HorizontalAlignment="Left" Margin="543,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="KijeloltHossz" HorizontalAlignment="Left" Margin="543,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="KijeloltEv" HorizontalAlignment="Left" Margin="543,274,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Exit" Content="Kilépés" HorizontalAlignment="Left" Margin="603,370,0,0" VerticalAlignment="Top" Click="Exit_Click"/>
+        <StackPanel Margin="81,328,454,2">
             <RadioButton x:Name="Radio1" Content="2000 előtt épült" Margin="0,5" Checked="Radio1_Checked"/>
             <RadioButton x:Name="Radio2" Content="2000-ben vagy utána épült" Margin="0,5" Checked="Radio2_Checked"/>
             <Label x:Name="Darab" Content="" Height="24"/>
